@@ -33,7 +33,7 @@ function App() {
         <div className="container">
           <div className="HomeBox">
             <div className="HomeContainer">
-              <img src={logo_nu} alt="" />
+              <img src={logo_nu} alt="Nu Bank Logo" />
               <div className="TextBox">
                 <h1>Centralize o controle das suas finanças</h1>
                 <p>de forma rápida e segura</p>
@@ -41,7 +41,7 @@ function App() {
               </div>
             </div>
             <figure>
-              <img src={asset_landing_page} alt="" />
+              <img src={asset_landing_page} alt="Landing Page Asset" />
             </figure>
           </div>
         </div>
