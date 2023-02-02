@@ -1,7 +1,9 @@
 import { useState } from "react";
-import Header from "./components/Header";
 import asset_landing_page from "./assets/homescreenasset.png";
 import logo_nu from "./assets/nubanklogo.png";
+import { Form } from "./components/Form/Form";
+import { Header } from "./components/Header/Header";
+import { List } from "./components/List/List";
 import "./styles.css";
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
     { description: "Abono Salárial", type: "Entrada", value: 3500 },
     { description: "Conta de luz", type: "Saída", value: 150 },
   ]);
+
   const [logado, setLogado] = useState(false);
 
   const Login = () => {
@@ -25,8 +28,10 @@ function App() {
     <>
       {logado ? (
         <div className="App">
-          <div>
-            <Header Logout={Logout} />
+          <Header Logout={Logout} />
+          <div className="DashBoardMain">
+            <Form />
+            <List />
           </div>
         </div>
       ) : (
@@ -37,7 +42,9 @@ function App() {
               <div className="TextBox">
                 <h1>Centralize o controle das suas finanças</h1>
                 <p>de forma rápida e segura</p>
-                <button onClick={Login}>Iniciar</button>
+                <button className="button item1" onClick={Login}>
+                  Iniciar
+                </button>
               </div>
             </div>
             <figure>

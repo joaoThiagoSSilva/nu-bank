@@ -1,0 +1,9 @@
+.Resume {
+    margin-bottom: 32px;
+    font-weight: 700;
+}
+.EmptyList {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
