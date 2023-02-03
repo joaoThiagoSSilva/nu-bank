@@ -42,7 +42,7 @@ function App() {
               <div className="TextBox">
                 <h1>Centralize o controle das suas finanças</h1>
                 <p>de forma rápida e segura</p>
-                <button className="button item1" onClick={Login}>
+                <button className="ButtonInit" onClick={Login}>
                   Iniciar
                 </button>
               </div>

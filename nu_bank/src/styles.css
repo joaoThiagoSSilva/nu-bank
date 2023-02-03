@@ -9,8 +9,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw; */
+  /* height: 100vh; */
 }
 .container {
   width: 100vw;
@@ -55,20 +55,14 @@
   width: 302px;
 }
 
-.TextBox button {
+.ButtonInit {
   width: 241px;
   height: 48px;
   border-radius: 8px;
   border: none;
   background: #6a2a7c;
   color: #fff;
-}
-
-.TextBox button:hover {
   cursor: pointer;
-  border: solid 2px #170f18;
-  transition: 1ms;
-  background-color: #c45dd2;
 }
 
 figure {
@@ -92,7 +86,7 @@ figure img {
   }
   figure img {
     max-width: 348px;
-    height: 348px;
+    
     /* margin-bottom: 25px; */
   }
   .HomeContainer img {
@@ -106,4 +100,19 @@ figure img {
   padding-top: 38px;
   display: flex;
   gap: 58px;
+  max-width: 983px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .DashBoardMain {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .NoCard {
+    justify-content: space-around;
+  }
+
 }
