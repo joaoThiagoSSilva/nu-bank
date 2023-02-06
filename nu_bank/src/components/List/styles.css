@@ -1,0 +1,44 @@
+.Resume {
+    margin-bottom: 32px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.Resume > p {
+    width: 96%;
+}
+
+.EmptyList {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+.EmptyList > h3 {
+    width: 96%;;
+}
+.NoCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 332px;
+    max-width: 562px;
+    width: 96%;
+}
+.ListDiv {
+    max-width: 562px;
+    min-width: 200px;
+    width: 100%;
+}
+
+.ContainerList {
+    width: 100%;
+}
+ul {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    height: 512px;
+    max-width: 562px;
+    min-width: 200px;
+    width: 100%;
+}

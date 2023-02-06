@@ -1,0 +1,15 @@
+.TotalMoney {
+  max-width: 382px;
+  min-width: 200px;
+  width: 80%;
+  height: 96px;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+.TotalMoney > p {
+    color: #6a2a7c;
+}
