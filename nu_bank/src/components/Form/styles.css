@@ -1,0 +1,68 @@
+.FormContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border: #e9ecef 2px solid;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 363px;
+  min-width: 200px;
+  width: 80%;
+  height: 380px;
+}
+
+.DivDescription {
+  display: flex;
+  flex-direction: column;
+}
+.LabelTitle {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #000;
+}
+.LabelExample {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #868e96;
+}
+
+.DashList {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.InputForm {
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.ValueEntry {
+  width: 40%;
+}
+
+.SelectEntry {
+  height: 48px;
+  width: 100%;
+}
+
+.button {
+  padding: 13px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #6a2a7c;
+  color: #ffffff;
+  border: 3px solid;
+}
+
+.button:hover {
+  cursor: pointer;
+  border: 3px solid;
+}
+.LabelContainer {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
