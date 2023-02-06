@@ -4,13 +4,11 @@ import logo_nu from "./assets/nubanklogo.png";
 import { Form } from "./components/Form/Form";
 import { Header } from "./components/Header/Header";
 import { List } from "./components/List/List";
+import { TotalMoney } from "./components/TotalMoney/TotalMoney";
 import "./styles.css";
 
 function App() {
-  const [listTransactions, setListTransactions] = useState([
-    { description: "Abono Salárial", type: "Entrada", value: 3500 },
-    { description: "Conta de luz", type: "Saída", value: 150 },
-  ]);
+  const [listTransactions, setListTransactions] = useState([]);
 
   const [logado, setLogado] = useState(false);
 
@@ -24,14 +22,39 @@ function App() {
 
   const categories = ["Entrada", "Saída"];
 
+  function transactionsAdd(formatData) {
+    setListTransactions([...listTransactions, formatData]);
+  }
+
+  const [filter, setFilter] = useState("");
+
+  const newList = listTransactions.filter((entry) =>
+    filter === "" ? true : entry.type === filter
+  );
+
+  function removeEntry(remove) {
+    const newList = listTransactions.filter((entry) => entry !== remove);
+    setListTransactions(newList);
+  }
+
   return (
     <>
       {logado ? (
         <div className="App">
           <Header Logout={Logout} />
-          <div className="DashBoardMain">
-            <Form />
-            <List />
+          <div className="DashBoard">
+            <div className="DashBoardMain">
+              <Form addTransactions={transactionsAdd} categories={categories} />
+              <TotalMoney listTransactions={newList} />
+            </div>
+            <aside className="AsideList">
+              <List
+                listTransactions={newList}
+                categories={categories}
+                removeEntry={removeEntry}
+                setFilter={setFilter}
+              />
+            </aside>
           </div>
         </div>
       ) : (

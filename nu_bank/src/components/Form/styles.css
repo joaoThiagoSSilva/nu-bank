@@ -5,6 +5,8 @@
   border: #e9ecef 2px solid;
   padding: 25px;
   border-radius: 8px;
+  max-width: 363px;
+  min-width: 200px;
   width: 80%;
   height: 380px;
 }
