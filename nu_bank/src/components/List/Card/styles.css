@@ -22,15 +22,13 @@ li {
   flex-direction: column;
   gap: 12px;
   white-space: nowrap; 
-  width: 7em; 
+  width: 24em; 
   overflow: hidden;
   text-overflow: ellipsis; 
 }
 .TransactionsValue {
   display: flex;
-  gap: 33px;
-  margin: 0 3% 5% 0;
-  width: 123px;
+  gap: 10px;
 }
 .TransactionsValue > button {
   width: 22px;
